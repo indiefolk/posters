@@ -100,14 +100,17 @@ textarea {
 
     body {
         background-color: #f3eddf;
+        -webkit-box-shadow: inset 0px 0px 200px rgba(0,0,0,0.2);
+        -moz-box-shadow:    inset 0px 0px 200px rgba(0,0,0,0.2);
+        box-shadow:         inset 0px 0px 200px rgba(0,0,0,0.2);
     }
 
 
     .main {
         width: 638px;
         height: 960px;
-        border-left: 1px solid #ccc;
-        border-right: 1px solid #ccc;
+        /*border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;*/
         margin: 0 auto;
         position: relative;
     }
@@ -194,6 +197,31 @@ textarea {
 
         /* Internet Explorer */
         filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+        position: absolute;
+        top: 20%;
+        right: -50px;
+        z-index: 3;
+    }
+
+    .vertical a {
+        text-decoration: none;
+        font-size: 11px;
+        line-height: 11px;
+        padding: 0;
+        margin: 0;
+        text-shadow: none;
+        font-weight: bold;
+    }
+
+    .vertical a:hover {
+        color: #e78064;
+    }
+
+    .vertical .see-all {
+        margin-right: 4px;
+        padding-right: 10px;
+        border-right: 2px solid #da5c3a;
     }
 
     #footer {
