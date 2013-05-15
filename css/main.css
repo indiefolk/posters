@@ -98,7 +98,9 @@ textarea {
         height: 100%;
     }
 
-    body {
+    /* TALLEST MAN */
+
+    .tallest-man {
         background-color: #f3eddf;
         -webkit-box-shadow: inset 0px 0px 200px rgba(0,0,0,0.2);
         -moz-box-shadow:    inset 0px 0px 200px rgba(0,0,0,0.2);
@@ -106,7 +108,7 @@ textarea {
     }
 
 
-    .main {
+    .tallest-man .main {
         width: 638px;
         height: 960px;
         /*border-left: 1px solid #ccc;
@@ -115,7 +117,7 @@ textarea {
         position: relative;
     }
 
-    .background {
+    .tallest-man .background {
         /*background: url('../img/tallest-man.svg') no-repeat scroll center center;*/
         /*background-size: 75%;*/
         /*background: url('../img/tallest-man-shaded.svg') no-repeat scroll center center;*/
@@ -137,7 +139,7 @@ textarea {
         Ultra Bold: 900;
     */
 
-    h1, h2, .vertical a {
+    .tallest-man h1, .tallest-man h2, .tallest-man .vertical a {
         font-family: 'Source Sans Pro', Arial, serif;
         text-transform: uppercase;
         text-align: center;
@@ -147,17 +149,19 @@ textarea {
         z-index: 2;
         text-shadow:
           -1px -1px 0 rgba(0, 0, 0, 0.3),
-          1px 1px 0 rgba(255, 255, 255, 0.5)
+          1px 1px 0 rgba(255, 255, 255, 0.5);
+
+        transition: margin 0.1s;
     }
 
-    h1 {
+    .tallest-man h1 {
         font-size: 108px;
         font-weight: 900;
         letter-spacing: 2px;
         padding-top: 100px;
     }
 
-    h2 {
+    .tallest-man h2 {
         /*font-family: 'Syncopate', sans-serif;*/
         /*font-family: 'Cousine', sans-serif;*/
         font-family: 'PT Sans Caption', sans-serif;
@@ -172,7 +176,15 @@ textarea {
         letter-spacing: 7px;
     }
 
-    .vertical {
+    .tallest-man .hover h1 {
+        margin-left: 2px;
+    }
+
+    .tallest-man .hover h2 {
+        margin-left: -2px;
+    }
+
+    .tallest-man .vertical {
         /* from: http://www.css3maker.com/text-rotation.html
 
             -webkit-transform: rotate(90deg);
@@ -181,7 +193,6 @@ textarea {
             writing-mode: tb-rl;
 
         */
-
 
         /* Safari */
         -webkit-transform: rotate(-90deg);
@@ -204,7 +215,7 @@ textarea {
         z-index: 3;
     }
 
-    .vertical a {
+    .tallest-man .vertical a {
         text-decoration: none;
         font-size: 11px;
         line-height: 11px;
@@ -214,17 +225,17 @@ textarea {
         font-weight: bold;
     }
 
-    .vertical a:hover {
+    .tallest-man .vertical a:hover {
         color: #e78064;
     }
 
-    .vertical .see-all {
+    .tallest-man .vertical .see-all {
         margin-right: 4px;
         padding-right: 10px;
         border-right: 2px solid #da5c3a;
     }
 
-    #footer {
+    .tallest-man #footer {
         font-family: 'Pacifico', cursive;
         font-size: 60px;
         position: fixed;
@@ -240,12 +251,9 @@ textarea {
           z-index: 1;
     }
 
-    #footer span {
+    .tallest-man #footer span {
         font-size: 20px;
     }
-
-
-
 
 
 
